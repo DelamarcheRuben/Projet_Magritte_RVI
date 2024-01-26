@@ -5,7 +5,7 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 using UnityEngine.XR;
 
-public class PadZoom : MonoBehaviour
+public class KeyFeedback : MonoBehaviour
 {
 	public ZoomIn zoom;
 	public Console console;
@@ -13,9 +13,9 @@ public class PadZoom : MonoBehaviour
 	public bool activated = true;
 
 	private List<InputDevice> devicesWithPadButton;
-    private bool lastButtonState = false;
+	private bool lastButtonState = false;
 
-    public void setEnabled(bool newVal)
+	public void setEnabled(bool newVal)
 	{
 		enabled = newVal;
 	}
@@ -86,11 +86,15 @@ public class PadZoom : MonoBehaviour
 							&& primaryButtonState
 							|| tempState;
 			}
-			
-			if (tempState != lastButtonState && Input.GetAxis("Vertical") > 0.5)
+
+			if (tempState != lastButtonState && Input.GetAxis("Vertical") < -0.5)
 			{
-				zoom.OnPadPressed(tempState);
-				lastButtonState = tempState;
+				console.AddLine("test button bas");
+			}
+			if (tempState != lastButtonState && Input.GetAxis("Horizontal") > 0.5)
+			{
+				console.Flush();
+				console.AddLine("console clear");
 			}
 		}
 	}
