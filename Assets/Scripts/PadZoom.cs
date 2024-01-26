@@ -59,7 +59,7 @@ public class PadZoom : MonoBehaviour
 	private void InputDevices_deviceConnected(InputDevice device)
 	{
 		bool discardedValue;
-		if (device.TryGetFeatureValue(CommonUsages.triggerButton, out discardedValue))
+		if (device.TryGetFeatureValue(CommonUsages.primary2DAxisClick, out discardedValue))
 		{
 			devicesWithPadButton.Add(device);
 		}
@@ -82,11 +82,12 @@ public class PadZoom : MonoBehaviour
 			foreach (var device in devicesWithPadButton)
 			{
 				bool primaryButtonState = false;
-				tempState = device.TryGetFeatureValue(CommonUsages.triggerButton, out primaryButtonState)
+				tempState = device.TryGetFeatureValue(CommonUsages.primary2DAxisClick, out primaryButtonState)
 							&& primaryButtonState
 							|| tempState;
 			}
-			if (tempState != lastButtonState)
+			
+			if (tempState != lastButtonState && Input.GetAxis("Vertical") > 0.5)
 			{
 				zoom.OnPadPressed(tempState);
 				lastButtonState = tempState;
