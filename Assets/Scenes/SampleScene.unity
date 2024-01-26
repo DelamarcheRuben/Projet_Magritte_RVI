@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -269,7 +269,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283898800}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.1, y: 0, z: 46.5}
+  m_LocalPosition: {x: -43.1, y: 0, z: 52.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 881255354}
@@ -745,6 +745,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6f4cd06bb0729479cab0860cd733de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera_offset: {fileID: 881255353}
+  console: {fileID: 488696574}
 --- !u!114 &470486780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -757,6 +759,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7006d8fc1769c94c871927aa84c3bbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zoom: {fileID: 470486779}
+  console: {fileID: 488696574}
+  enabled: 0
+  activated: 1
 --- !u!114 &470486781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -769,6 +775,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54e8703b9f2b61c499a989b8e13b404d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zoom: {fileID: 0}
+  shooter: {fileID: 0}
+  enabled: 0
+  activated: 1
 --- !u!114 &470486782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -781,6 +791,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1a6f832132d0c54cad596e1584474f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nbClic: 0
+  sound: {fileID: 0}
+  console: {fileID: 0}
+  impulseFactor: 10
+  ballLifeTime: 4
+  inbetweenShootsTime: 0.5
 --- !u!114 &470486783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -793,6 +809,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48059027972261e47abe5e64df8e4e8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuButtonPress:
+    m_PersistentCalls:
+      m_Calls: []
+  console: {fileID: 0}
 --- !u!1 &488696572
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,6 +858,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e15dfdd9fccaa428c6a7468c17d146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  displayer: {fileID: 112666825}
+  lines: []
 --- !u!1 &490069227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,8 +1441,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5c4c98a1795ae842a33810e71b51091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyHit: 0
-  keyCanBeHitAgain: 0
 --- !u!1 &1005341315
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,14 +1794,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1275163518}
-  m_LocalRotation: {x: 0, y: -0.5, z: 0, w: 0.8660254}
-  m_LocalPosition: {x: -4.55, y: 1, z: -40.68}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 467672576}
   m_Father: {fileID: 881255354}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -60, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1570114501
 GameObject:
   m_ObjectHideFlags: 0
@@ -1825,30 +1845,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1651755858 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8741686588246919759, guid: ebc9962863a9c4be8b6db4454b8521b8, type: 3}
-  m_PrefabInstance: {fileID: 1884671849}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1651755860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1651755858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 593d3ac6e08f4468b819285084eac4dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 0}
-  onPress:
-    m_PersistentCalls:
-      m_Calls: []
-  onRelease:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &1884671849
 PrefabInstance:
   m_ObjectHideFlags: 0

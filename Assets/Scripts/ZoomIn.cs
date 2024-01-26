@@ -9,29 +9,24 @@ public class ZoomIn : MonoBehaviour
 
     private float value_zoom = 5;
 
+    private Vector3 last_position;  
+
     private bool isZoomed = false;
     private bool lastTriggerValue = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void Zoom()
     {
-        camera_offset.transform.Translate(Camera.main.transform.forward*value_zoom);
-        isZoomed = true;
+        if(!Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, value_zoom))
+        {
+            last_position = camera_offset.transform.position;
+            camera_offset.transform.Translate(Camera.main.transform.forward * value_zoom);
+            isZoomed = true;
+        }
     }
 
     private void Unzoom()
     {
-        camera_offset.transform.Translate(Camera.main.transform.forward * (-value_zoom));
+        camera_offset.transform.position = last_position;
         isZoomed = false;
         
     }
