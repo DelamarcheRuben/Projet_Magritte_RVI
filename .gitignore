@@ -15,7 +15,7 @@
 !/[Aa]ssets/Prefabs/
 !/[Aa]ssets/Scenes/
 !/[Aa]ssets/XR/
-!/[Aa]ssets/*.meta
+!/[Aa]ssets/Scripts/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
