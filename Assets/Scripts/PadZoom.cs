@@ -92,7 +92,6 @@ public class PadZoom : MonoBehaviour
 				zoom.OnPadPressed(tempState);
 				lastButtonState = tempState;
 			}
-			
 		}
 	}
 }
