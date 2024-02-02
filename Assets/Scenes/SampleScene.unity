@@ -513,6 +513,7 @@ GameObject:
   - component: {fileID: 470486776}
   - component: {fileID: 470486775}
   - component: {fileID: 470486780}
+  - component: {fileID: 470486786}
   - component: {fileID: 470486779}
   - component: {fileID: 470486782}
   - component: {fileID: 470486781}
@@ -865,9 +866,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 470486773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7006d8fc1769c94c871927aa84c3bbd, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ac318565a1885f408789bca0f8a5576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zoom: {fileID: 470486786}
+  console: {fileID: 488696575}
+  enabled: 1
+  activated: 1
 --- !u!114 &470486781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -928,6 +933,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c834dcc0b9f5bcb478d0a4afcb5e238c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &470486786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470486773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ced200d00758a664dabbb009e148b837, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera_offset: {fileID: 881255353}
+  console: {fileID: 488696575}
 --- !u!1 &488696572
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,7 +956,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 488696573}
-  - component: {fileID: 488696574}
+  - component: {fileID: 488696575}
   m_Layer: 0
   m_Name: GOConsole
   m_TagString: Untagged
@@ -961,7 +980,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &488696574
+--- !u!114 &488696575
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -970,9 +989,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 488696572}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75e15dfdd9fccaa428c6a7468c17d146, type: 3}
+  m_Script: {fileID: 11500000, guid: d18f88f45c6dcf34b95c0cd88b798a31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  displayer: {fileID: 112666825}
+  lines: []
 --- !u!1 &490069227
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,7 +2044,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8741686588246919759, guid: ebc9962863a9c4be8b6db4454b8521b8, type: 3}
       propertyPath: m_Name
-      value: Button
+      value: ValidationButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebc9962863a9c4be8b6db4454b8521b8, type: 3}

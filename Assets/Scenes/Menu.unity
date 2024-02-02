@@ -584,7 +584,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 111262793}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 231228e9d7434b04a8af96b03d4abe82, type: 3}
+  m_Script: {fileID: 11500000, guid: 8bc21325a0dedea4abab69e532102b09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &202103009
@@ -1839,7 +1839,6 @@ GameObject:
   - component: {fileID: 888057955}
   - component: {fileID: 888057954}
   - component: {fileID: 888057953}
-  - component: {fileID: 888057956}
   m_Layer: 0
   m_Name: Button - PLAY
   m_TagString: Untagged
@@ -1911,7 +1910,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 888057956}
+      - m_Target: {fileID: 111262795}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: PlayGame
         m_Mode: 1
@@ -1961,18 +1960,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 888057951}
   m_CullTransparentMesh: 1
---- !u!114 &888057956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 888057951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 231228e9d7434b04a8af96b03d4abe82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &888734758
 GameObject:
   m_ObjectHideFlags: 0
@@ -2820,7 +2807,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1700032738}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8799ca5b0e3a3ac4e965a8bd81b45c94, type: 3}
+  m_Script: {fileID: 11500000, guid: ed1dab8926bf2e64c89d795b8fc22dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 1700032740}
