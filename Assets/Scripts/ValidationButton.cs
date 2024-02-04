@@ -1,13 +1,17 @@
 using UnityEngine;
 
-public class ValidationButton : MonoBehaviour
+public class ValidationButton : MonoBehaviour, IInteractable
 {
     public TextManager textManager;
+    public AudioSource audioSource; // Assurez-vous que ce composant est attaché dans l'éditeur Unity
 
-    // Cette méthode sera appelée par votre système d'interaction VR
-    // quand le bouton "ValidationButton" est pressé.
-    public void OnButtonPressed()
+    public void OnPress() // Implémentation de la méthode de l'interface
     {
         textManager.ValidatePassword();
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
+        // Ajoutez ici toute autre logique nécessaire lors de l'appui sur le bouton
     }
 }

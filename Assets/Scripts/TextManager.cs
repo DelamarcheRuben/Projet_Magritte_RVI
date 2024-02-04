@@ -4,9 +4,10 @@ using TMPro;
 public class TextManager : MonoBehaviour
 {
     public TMP_Text passwordText;
-    public GameObject doorLeftPart; // Assignez le premier élément de la porte
-    public GameObject doorRightPart; // Assignez le deuxième élément de la porte
-    public string correctPassword = "MAGRITTE";
+    public Animator doorAnimator; // L'Animator de la porte
+    public AudioSource successAudioSource; // AudioSource pour le son de succès
+    public AudioSource failureAudioSource; // AudioSource pour le son d'échec
+    public string correctPassword = "E3";
     public Color successColor = Color.green;
     public Color failureColor = Color.red;
     public Renderer passwordRenderer; // Le Renderer du cube Password
@@ -19,26 +20,30 @@ public class TextManager : MonoBehaviour
         passwordText.text = enteredText;
     }
 
-    // Appelée quand le bouton "ValidationButton" est pressé
     public void ValidatePassword()
     {
         if (enteredText.Equals(correctPassword))
         {
             passwordRenderer.material.color = successColor;
-            OpenDoor();
+            OpenDoorWithSuccess();
         }
         else
         {
             passwordRenderer.material.color = failureColor;
-            // Optionnel : Ajoutez une logique pour effacer le texte après un échec.
+            PlayFailureSound();
             ClearText();
         }
     }
 
-    private void OpenDoor()
+    private void OpenDoorWithSuccess()
     {
-        doorLeftPart.SetActive(false); // Désactivez une partie de la porte
-        doorRightPart.SetActive(false); // Désactivez l'autre partie de la porte
+        doorAnimator.SetTrigger("Open"); // Remplacez "Open" par le nom exact de votre trigger d'animation
+        successAudioSource.Play();
+    }
+
+    private void PlayFailureSound()
+    {
+        failureAudioSource.Play();
     }
 
     private void ClearText()
