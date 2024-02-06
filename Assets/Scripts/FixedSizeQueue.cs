@@ -1,6 +1,7 @@
+using System.Collections;
 using System.Collections.Generic;
 
-public class FixedSizeQueue<T>
+public class FixedSizeQueue<T> : IEnumerable<T>
 {
     private Queue<T> queue;
     private int maxSize;
@@ -35,5 +36,16 @@ public class FixedSizeQueue<T>
     public int Count
     {
         get { return queue.Count; }
+    }
+
+    // Implémentation de GetEnumerator pour permettre les itérations avec foreach
+    public IEnumerator<T> GetEnumerator()
+    {
+        return queue.GetEnumerator();
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return this.GetEnumerator();
     }
 }
