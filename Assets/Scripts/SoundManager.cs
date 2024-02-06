@@ -9,11 +9,6 @@ public class SoundManager : MonoBehaviour
     [SerializeField] Slider volumeSlider;
     private string sliderPrefKey = "SliderValue";
 
-    public void playSound(AudioSource asa)
-    {
-        asa.Play();
-    }
-
     // Start is called before the first frame update
     void Start()
     {
