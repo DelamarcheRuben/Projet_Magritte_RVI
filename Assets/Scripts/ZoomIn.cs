@@ -9,7 +9,7 @@ public class ZoomIn : MonoBehaviour
 
     private float value_zoom = 1;
 
-    private Vector3 last_position;  
+    private Vector3 last_translate;  
 
     private bool isZoomed = false;
     private bool lastTriggerValue = false;
@@ -18,26 +18,27 @@ public class ZoomIn : MonoBehaviour
     {
         if(!Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, value_zoom))
         {
-            last_position = camera_offset.transform.position;
-            camera_offset.transform.Translate(Camera.main.transform.forward * value_zoom);
+            last_translate = Camera.main.transform.forward * value_zoom;
+            camera_offset.transform.Translate(Camera.main.transform.forward * value_zoom, Space.World);
             isZoomed = true;
         }
     }
 
     private void Unzoom()
     {
-        camera_offset.transform.position = last_position;
+        camera_offset.transform.Translate(last_translate*-1, Space.World);
         isZoomed = false;
         
     }
 
     public void OnPadPressed(bool triggerValue)
     {
-        console.AddLine("change zoom");
         if (isActiveAndEnabled && triggerValue && !lastTriggerValue)
         {
+            console.AddLine("before the function");
             if (isZoomed) Unzoom();
             else Zoom();
+            console.AddLine("after the function");
         }
         lastTriggerValue = triggerValue;
     }

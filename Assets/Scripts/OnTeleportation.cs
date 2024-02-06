@@ -6,6 +6,7 @@ public class OnTeleportation : MonoBehaviour
 {
     // Start is called before the first frame update.
     public GameObject camera_offset;
+    public ZoomIn zoom; //when teleportation : we have to update the last_position for the zoom to work ok
     private float position_y;
     void Start()
     {
@@ -16,5 +17,6 @@ public class OnTeleportation : MonoBehaviour
     public void onTeleport()
     {
         camera_offset.transform.position = new  Vector3(0, position_y, 0);
+        zoom.setLastPosition()
     }
 }

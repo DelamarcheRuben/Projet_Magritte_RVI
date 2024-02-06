@@ -9,7 +9,7 @@ public class PadZoom : MonoBehaviour
 {
 	public ZoomIn zoom;
 	public Console console;
-	public bool enabled = false;
+	public bool enabled = true;
 	public bool activated = true;
 
 	private List<InputDevice> devicesWithPadButton;
@@ -29,7 +29,6 @@ public class PadZoom : MonoBehaviour
 	void Start()
 	{
 		devicesWithPadButton = new List<InputDevice>();
-
 		RegisterDevices();
 	}
 
@@ -86,8 +85,7 @@ public class PadZoom : MonoBehaviour
 							&& primaryButtonState
 							|| tempState;
 			}
-			
-			if (tempState != lastButtonState && Input.GetAxis("Vertical") > 0.5)
+
 			{
 				zoom.OnPadPressed(tempState);
 				lastButtonState = tempState;
