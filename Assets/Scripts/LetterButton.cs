@@ -10,6 +10,6 @@ public class LetterButton : MonoBehaviour, IInteractable
     {
         // Ajoutez ici toute autre logique nécessaire lors de l'appui sur le bouton
         onLetterPressed?.Invoke(letter);
-        
+
     }
 }

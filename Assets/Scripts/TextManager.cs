@@ -11,6 +11,7 @@ public class TextManager : MonoBehaviour
     public Color successColor = Color.green;
     public Color failureColor = Color.red;
     public Renderer passwordRenderer; // Le Renderer du cube Password
+    public Console console;
 
     private string enteredText = "";
 
@@ -18,10 +19,12 @@ public class TextManager : MonoBehaviour
     {
         enteredText += letter;
         passwordText.text = enteredText;
+        console.AddLine("password : " + enteredText);
     }
 
     public void ValidatePassword()
     {
+        console.AddLine("validation password");
         if (enteredText.Equals(correctPassword))
         {
             passwordRenderer.material.color = successColor;
@@ -37,17 +40,20 @@ public class TextManager : MonoBehaviour
 
     private void OpenDoorWithSuccess()
     {
+        console.AddLine("openDoorWithSuccess()");
         doorAnimator.SetTrigger("Open"); // Remplacez "Open" par le nom exact de votre trigger d'animation
         successAudioSource.Play();
     }
 
     private void PlayFailureSound()
     {
+        console.AddLine("playFailureSound()");
         failureAudioSource.Play();
     }
 
     private void ClearText()
     {
+        console.AddLine("clearText()");
         enteredText = "";
         passwordText.text = enteredText;
     }

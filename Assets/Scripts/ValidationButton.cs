@@ -1,17 +1,18 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ValidationButton : MonoBehaviour, IInteractable
 {
-    public TextManager textManager;
-    public AudioSource audioSource; // Assurez-vous que ce composant est attaché dans l'éditeur Unity
+    public AudioSource audioSource;
+    public UnityEvent onValidated; // Ajoutez cet événement pour être déclenché après la validation
 
-    public void OnPress() // Implémentation de la méthode de l'interface
+    public void OnPress()
     {
-        textManager.ValidatePassword();
+        onValidated?.Invoke(); // Déclenche l'événement après la validation
+
         if (audioSource != null)
         {
             audioSource.Play();
         }
-        // Ajoutez ici toute autre logique nécessaire lors de l'appui sur le bouton
     }
 }
