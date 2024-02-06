@@ -268,14 +268,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283898800}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.91, y: 0.2, z: 49.32}
+  m_LocalRotation: {x: 0, y: -0.5735764, z: 0, w: 0.8191521}
+  m_LocalPosition: {x: -42.49, y: 0.2, z: 5.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 881255354}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -70, z: 0}
 --- !u!1 &467672575
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,13 +439,10 @@ GameObject:
   - component: {fileID: 470486776}
   - component: {fileID: 470486775}
   - component: {fileID: 470486780}
-  - component: {fileID: 470486786}
-  - component: {fileID: 470486779}
-  - component: {fileID: 470486782}
-  - component: {fileID: 470486781}
-  - component: {fileID: 470486783}
-  - component: {fileID: 470486784}
   - component: {fileID: 470486785}
+  - component: {fileID: 470486786}
+  - component: {fileID: 470486781}
+  - component: {fileID: 470486779}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -780,9 +777,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 470486773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a6f4cd06bb0729479cab0860cd733de, type: 3}
+  m_Script: {fileID: 11500000, guid: e26e3f8517a8a14418650488db04b1c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedObject: {fileID: 0}
 --- !u!114 &470486780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -808,45 +806,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 470486773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54e8703b9f2b61c499a989b8e13b404d, type: 3}
+  m_Script: {fileID: 11500000, guid: 37e6b943e74e4634aa7b3db14a001eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &470486782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 470486773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1a6f832132d0c54cad596e1584474f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &470486783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 470486773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48059027972261e47abe5e64df8e4e8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &470486784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 470486773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbc8a8f90f8173c4d80ffc3a4d36c38a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  padBottomHandler: {fileID: 470486779}
+  maxDistance: 100
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!114 &470486785
 MonoBehaviour:
   m_ObjectHideFlags: 0
