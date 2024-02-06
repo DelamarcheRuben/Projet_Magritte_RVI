@@ -422,8 +422,6 @@ MonoBehaviour:
           m_StringArgument: E
           m_BoolArgument: 0
         m_CallState: 2
-  passwordRenderer: {fileID: 0}
-  whiteColor: {r: 1, g: 1, b: 1, a: 1}
   letter: 
 --- !u!1 &470486773
 GameObject:
@@ -443,6 +441,7 @@ GameObject:
   - component: {fileID: 470486786}
   - component: {fileID: 470486781}
   - component: {fileID: 470486779}
+  - component: {fileID: 470486782}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -814,6 +813,20 @@ MonoBehaviour:
   interactableLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &470486782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470486773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb9a0b9a981edc48bd4adf45049d4a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enabled: 0
+  activated: 1
 --- !u!114 &470486785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1742,8 +1755,6 @@ MonoBehaviour:
           m_StringArgument: T
           m_BoolArgument: 0
         m_CallState: 1
-  passwordRenderer: {fileID: 0}
-  whiteColor: {r: 1, g: 1, b: 1, a: 1}
   letter: 
 --- !u!1 &1216938862
 GameObject:
@@ -2169,8 +2180,6 @@ MonoBehaviour:
           m_StringArgument: 3
           m_BoolArgument: 0
         m_CallState: 2
-  passwordRenderer: {fileID: 0}
-  whiteColor: {r: 1, g: 1, b: 1, a: 1}
   letter: 
 --- !u!1 &1461575376
 GameObject:
@@ -2314,11 +2323,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461575376}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!82 &1517090232 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7384051777236878016, guid: 4d60f28ccc38a5d4680fbe884cf03f1a, type: 3}
-  m_PrefabInstance: {fileID: 8573014946472536046}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1570114501
 GameObject:
   m_ObjectHideFlags: 0
@@ -2394,8 +2398,6 @@ MonoBehaviour:
           m_StringArgument: 1
           m_BoolArgument: 0
         m_CallState: 2
-  passwordRenderer: {fileID: 0}
-  whiteColor: {r: 1, g: 1, b: 1, a: 1}
   letter: 
 --- !u!1 &1667968293
 GameObject:
@@ -2608,8 +2610,6 @@ MonoBehaviour:
           m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 2
-  passwordRenderer: {fileID: 0}
-  whiteColor: {r: 1, g: 1, b: 1, a: 1}
   letter: 
 --- !u!1001 &824658128747726461
 PrefabInstance:
@@ -3155,11 +3155,6 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2245570371350242872, guid: 4d60f28ccc38a5d4680fbe884cf03f1a, type: 3}
   m_PrefabInstance: {fileID: 8573014946472536046}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8573014946472536051 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7384051778650274416, guid: 4d60f28ccc38a5d4680fbe884cf03f1a, type: 3}
-  m_PrefabInstance: {fileID: 8573014946472536046}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8573014946472536052 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1136509757385448824, guid: 4d60f28ccc38a5d4680fbe884cf03f1a, type: 3}
@@ -3185,20 +3180,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6340137141977296054, guid: 4d60f28ccc38a5d4680fbe884cf03f1a, type: 3}
   m_PrefabInstance: {fileID: 8573014946472536046}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8573014946472536057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8573014946472536051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6916241def34c934eac246408823520c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textManager: {fileID: 8573014946472536049}
-  audioSource: {fileID: 1517090232}
 --- !u!114 &8573014946472536058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3226,8 +3207,6 @@ MonoBehaviour:
           m_StringArgument: I
           m_BoolArgument: 0
         m_CallState: 2
-  passwordRenderer: {fileID: 0}
-  whiteColor: {r: 1, g: 1, b: 1, a: 1}
   letter: 
 --- !u!114 &8573014946472536059
 MonoBehaviour:
@@ -3256,8 +3235,6 @@ MonoBehaviour:
           m_StringArgument: R
           m_BoolArgument: 0
         m_CallState: 2
-  passwordRenderer: {fileID: 0}
-  whiteColor: {r: 1, g: 1, b: 1, a: 1}
   letter: 
 --- !u!114 &8573014946472536060
 MonoBehaviour:
@@ -3286,8 +3263,6 @@ MonoBehaviour:
           m_StringArgument: G
           m_BoolArgument: 0
         m_CallState: 2
-  passwordRenderer: {fileID: 0}
-  whiteColor: {r: 1, g: 1, b: 1, a: 1}
   letter: 
 --- !u!114 &8573014946472536061
 MonoBehaviour:
@@ -3316,8 +3291,6 @@ MonoBehaviour:
           m_StringArgument: A
           m_BoolArgument: 0
         m_CallState: 2
-  passwordRenderer: {fileID: 0}
-  whiteColor: {r: 1, g: 1, b: 1, a: 1}
   letter: 
 --- !u!114 &8573014946472536062
 MonoBehaviour:
@@ -3346,6 +3319,4 @@ MonoBehaviour:
           m_StringArgument: M
           m_BoolArgument: 0
         m_CallState: 2
-  passwordRenderer: {fileID: 0}
-  whiteColor: {r: 1, g: 1, b: 1, a: 1}
   letter: 
