@@ -2565,6 +2565,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7871352684214439380, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+      propertyPath: m_text
+      value: "La d\xE9couverte du feu\n(1927)\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 7871352684528392988, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
       propertyPath: m_Name
       value: Paintings
@@ -2613,6 +2617,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8007406275020210105, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1b16c3f89b0b0d944b941a86008d4654, type: 3}
+    - target: {fileID: 8007406275993646525, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f044fe83ff282ee46ac45edf41cc438d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
 --- !u!1001 &8953639750205792304
