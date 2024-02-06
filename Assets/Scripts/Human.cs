@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Human : MonoBehaviour
+public class Human : MonoBehaviour, IInteractable
 {
     public UnityEvent onHumanPressed;
     public void OnPress()
