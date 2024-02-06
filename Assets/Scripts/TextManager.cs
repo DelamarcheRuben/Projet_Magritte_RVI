@@ -14,6 +14,8 @@ public class TextManager : MonoBehaviour
     public TMP_Text passwordHisto;
     public GameObject doorObject;
 
+    private FixedSizeQueue<string> queueHistoric = new FixedSizeQueue<string>(10);
+
     private string enteredText = "";
 
     public void AddLetter(string letter)
@@ -26,17 +28,19 @@ public class TextManager : MonoBehaviour
     {
         if (enteredText.Equals(correctPassword))
         {
-            passwordHisto.text += "\n Succès : " + enteredText ;
+            queueHistoric.Enqueue("\n Succès : " + enteredText);
             passwordRenderer.material.color = successColor;
             OpenDoorWithSuccess();
         }
         else
         {
-            passwordHisto.text += "\n Echec : " + enteredText;
+            queueHistoric.Enqueue("\n Echec : " + enteredText);
             passwordRenderer.material.color = failureColor;
             PlayFailureSound();
             ClearText();
         }
+
+        UpdatePasswordHistory(); // Mise à jour de l'historique
     }
 
     private void OpenDoorWithSuccess()
@@ -64,5 +68,14 @@ public class TextManager : MonoBehaviour
     private void DoorAnimation()
     {
         doorObject.SetActive(false);
+    }
+
+    private void UpdatePasswordHistory()
+    {
+        passwordHisto.text = "";
+        foreach (string entry in queueHistoric)
+        {
+            passwordHisto.text += entry;
+        }
     }
 }
