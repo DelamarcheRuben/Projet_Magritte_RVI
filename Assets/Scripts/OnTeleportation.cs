@@ -17,6 +17,5 @@ public class OnTeleportation : MonoBehaviour
     public void onTeleport()
     {
         camera_offset.transform.position = new  Vector3(0, position_y, 0);
-        zoom.setLastPosition()
     }
 }
