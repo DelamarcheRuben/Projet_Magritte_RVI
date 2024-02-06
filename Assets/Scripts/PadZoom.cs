@@ -85,7 +85,7 @@ public class PadZoom : MonoBehaviour
 							&& primaryButtonState
 							|| tempState;
 			}
-
+			if (tempState != lastButtonState && Input.GetAxis("Vertical") > 0.5)
 			{
 				zoom.OnPadPressed(tempState);
 				lastButtonState = tempState;

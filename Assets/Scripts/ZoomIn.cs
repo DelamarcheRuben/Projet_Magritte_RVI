@@ -35,10 +35,8 @@ public class ZoomIn : MonoBehaviour
     {
         if (isActiveAndEnabled && triggerValue && !lastTriggerValue)
         {
-            console.AddLine("before the function");
             if (isZoomed) Unzoom();
             else Zoom();
-            console.AddLine("after the function");
         }
         lastTriggerValue = triggerValue;
     }
