@@ -14,7 +14,7 @@ public class IndiceManager : MonoBehaviour
         {
 	    console.AddLine("\nL'indice numéro" + currentIndiceIndex + " a été demandé");
             // Afficher l'indice actuel
-            indicesText.text = "\n" + indices[currentIndiceIndex];
+            indicesText.text += "\n" + indices[currentIndiceIndex];
             // Passer au prochain indice pour la prochaine fois que le bouton est pressé
             currentIndiceIndex++;
         }
