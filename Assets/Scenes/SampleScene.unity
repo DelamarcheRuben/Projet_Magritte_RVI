@@ -2565,6 +2565,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7871352684214439380, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+      propertyPath: m_text
+      value: "La D\xE9couverte du Feu\n(1927)\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 7871352684528392988, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
       propertyPath: m_Name
       value: Paintings
