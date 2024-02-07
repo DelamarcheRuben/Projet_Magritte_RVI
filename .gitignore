@@ -11,6 +11,8 @@
 /[Uu]ser[Ss]ettings/
 /[Aa]ssets/*
 !/[Aa]ssets/Audio/
+/[Aa]ssets/Audio/*
+!/[Aa]ssets/Audio/**/
 !/[Aa]ssets/Materials/
 !/[Aa]ssets/Prefabs/
 !/[Aa]ssets/Scenes/
