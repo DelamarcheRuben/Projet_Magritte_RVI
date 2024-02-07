@@ -967,6 +967,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3700952982875996202, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
   m_PrefabInstance: {fileID: 851946046383820739}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &611066347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611066346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6916241def34c934eac246408823520c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &611066351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2025,6 +2040,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1162278682124487504, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
   m_PrefabInstance: {fileID: 851946046383820739}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1472180197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472180196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6916241def34c934eac246408823520c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1472180201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2315,6 +2345,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 491406478311635164, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
   m_PrefabInstance: {fileID: 851946046383820739}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1847016526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847016525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6916241def34c934eac246408823520c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPressed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1847016530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2542,6 +2587,434 @@ PrefabInstance:
     - {fileID: 6362315727810421307, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
     - {fileID: 1077009346800013509, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+--- !u!1 &851946046383820740 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9217216175679962173, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+  m_PrefabInstance: {fileID: 851946046383820739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &851946046383820741 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7705589045383611522, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+  m_PrefabInstance: {fileID: 851946046383820739}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93e023af282e244dbd18ac5e7fc9baa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &851946046383820742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7246477933579321461, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+  m_PrefabInstance: {fileID: 851946046383820739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &851946046383820743 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4389884605351527799, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+  m_PrefabInstance: {fileID: 851946046383820739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &851946046383820744 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8515910541785765162, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+  m_PrefabInstance: {fileID: 851946046383820739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &851946046383820745 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2634176292621363710, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+  m_PrefabInstance: {fileID: 851946046383820739}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93e023af282e244dbd18ac5e7fc9baa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &851946046383820746 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8331483773786958272, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+  m_PrefabInstance: {fileID: 851946046383820739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &851946046383820747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2603831832615531373, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+  m_PrefabInstance: {fileID: 851946046383820739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &851946046383820748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8660549524240838100, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+  m_PrefabInstance: {fileID: 851946046383820739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &851946046383820749 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3109857639442112826, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+  m_PrefabInstance: {fileID: 851946046383820739}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93e023af282e244dbd18ac5e7fc9baa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &851946046383820750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8596323843773069246, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+  m_PrefabInstance: {fileID: 851946046383820739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &851946046383820751 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4113397125858920, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+  m_PrefabInstance: {fileID: 851946046383820739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &851946046383820752 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 808168310963227524, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+  m_PrefabInstance: {fileID: 851946046383820739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &851946046383820753 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5914395143477836322, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+  m_PrefabInstance: {fileID: 851946046383820739}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93e023af282e244dbd18ac5e7fc9baa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &851946046383820754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7442355760336476530, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+  m_PrefabInstance: {fileID: 851946046383820739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &851946046383820755 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8927269501154726588, guid: 6ef61d8ec22bb5c4f8d3cbd113f7d07c, type: 3}
+  m_PrefabInstance: {fileID: 851946046383820739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &851946046383820756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851946046383820740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6916241def34c934eac246408823520c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 851946046383820741}
+        m_TargetAssemblyTypeName: VoixOffManager, Assembly-CSharp
+        m_MethodName: PauseVoixOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &851946046383820757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851946046383820742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6916241def34c934eac246408823520c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 851946046383820741}
+        m_TargetAssemblyTypeName: VoixOffManager, Assembly-CSharp
+        m_MethodName: StopVoixOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &851946046383820758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851946046383820743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6916241def34c934eac246408823520c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 851946046383820741}
+        m_TargetAssemblyTypeName: VoixOffManager, Assembly-CSharp
+        m_MethodName: PlayVoixOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &851946046383820759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851946046383820744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6916241def34c934eac246408823520c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 851946046383820745}
+        m_TargetAssemblyTypeName: VoixOffManager, Assembly-CSharp
+        m_MethodName: PauseVoixOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &851946046383820760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851946046383820746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6916241def34c934eac246408823520c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 851946046383820745}
+        m_TargetAssemblyTypeName: VoixOffManager, Assembly-CSharp
+        m_MethodName: StopVoixOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &851946046383820761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851946046383820747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6916241def34c934eac246408823520c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 851946046383820745}
+        m_TargetAssemblyTypeName: VoixOffManager, Assembly-CSharp
+        m_MethodName: PlayVoixOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &851946046383820762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851946046383820748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6916241def34c934eac246408823520c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 851946046383820749}
+        m_TargetAssemblyTypeName: VoixOffManager, Assembly-CSharp
+        m_MethodName: PauseVoixOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &851946046383820763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851946046383820750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6916241def34c934eac246408823520c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 851946046383820749}
+        m_TargetAssemblyTypeName: VoixOffManager, Assembly-CSharp
+        m_MethodName: StopVoixOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &851946046383820764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851946046383820751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6916241def34c934eac246408823520c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 851946046383820749}
+        m_TargetAssemblyTypeName: VoixOffManager, Assembly-CSharp
+        m_MethodName: PlayVoixOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &851946046383820765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851946046383820752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6916241def34c934eac246408823520c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 851946046383820753}
+        m_TargetAssemblyTypeName: VoixOffManager, Assembly-CSharp
+        m_MethodName: PauseVoixOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &851946046383820766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851946046383820754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6916241def34c934eac246408823520c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 851946046383820753}
+        m_TargetAssemblyTypeName: VoixOffManager, Assembly-CSharp
+        m_MethodName: StopVoixOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &851946046383820767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851946046383820755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6916241def34c934eac246408823520c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 851946046383820753}
+        m_TargetAssemblyTypeName: VoixOffManager, Assembly-CSharp
+        m_MethodName: PlayVoixOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &2067688004194455890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2838,6 +3311,70 @@ PrefabInstance:
       objectReference: {fileID: 1275163521}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38c17fa72346ece4281c5cf284b9e985, type: 3}
+--- !u!1 &6733214827839914784 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 17629661302583676, guid: 38c17fa72346ece4281c5cf284b9e985, type: 3}
+  m_PrefabInstance: {fileID: 6733214827839914783}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6733214827839914785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5770188611368314784, guid: 38c17fa72346ece4281c5cf284b9e985, type: 3}
+  m_PrefabInstance: {fileID: 6733214827839914783}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6733214827839914786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6733214827839914784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6916241def34c934eac246408823520c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1141065791}
+        m_TargetAssemblyTypeName: VoixOffManager, Assembly-CSharp
+        m_MethodName: PauseVoixOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6733214827839914787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6733214827839914785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6916241def34c934eac246408823520c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPressed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1141065791}
+        m_TargetAssemblyTypeName: VoixOffManager, Assembly-CSharp
+        m_MethodName: StopVoixOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &8628657834685952471
 PrefabInstance:
   m_ObjectHideFlags: 0
