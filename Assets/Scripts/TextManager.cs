@@ -14,7 +14,7 @@ public class TextManager : MonoBehaviour
     public TMP_Text passwordHisto;
     public GameObject doorObject;
 
-    private FixedSizeQueue<string> queueHistoric = new FixedSizeQueue<string>(10);
+    private FixedSizeQueue<string> queueHistoric = new FixedSizeQueue<string>(9);
 
     private string enteredText = "";
 

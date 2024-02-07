@@ -73,7 +73,7 @@ public class GameDataSerializer : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("No saved game data found.");
+            console.AddLine("No saved game data found.");
         }
     }
 }

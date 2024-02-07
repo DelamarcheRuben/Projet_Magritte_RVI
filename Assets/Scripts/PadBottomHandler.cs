@@ -12,6 +12,8 @@ public class PadBottomHandler : MonoBehaviour
     private List<InputDevice> devicesWithPadButton;
     private bool lastButtonState = false;
 
+    public Console console;
+
     void Start()
     {
         devicesWithPadButton = new List<InputDevice>();
@@ -73,6 +75,7 @@ public class PadBottomHandler : MonoBehaviour
             lastButtonState = buttonState;
             if (buttonState && selectedObject != null)
             {
+                console.AddLine("BotPad triggered");
                 var interactable = selectedObject.GetComponent<IInteractable>();
                 interactable?.OnPress();
             }
