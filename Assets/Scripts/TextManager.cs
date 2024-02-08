@@ -3,11 +3,10 @@ using TMPro;
 
 public class TextManager : MonoBehaviour
 {
-    public TMP_Text passwordText;
-    public Animator doorAnimator; // L'Animator de la porte
+    public TMP_Text passwordText; // Le text du panneau 'Password'
     public AudioSource successAudioSource; // AudioSource pour le son de succès
     public AudioSource failureAudioSource; // AudioSource pour le son d'échec
-    public string correctPassword = "E3";
+    public string correctPassword = "M1E3R2T1";
     public Color successColor = Color.green;
     public Color failureColor = Color.red;
     public Renderer passwordRenderer; // Le Renderer du cube Password

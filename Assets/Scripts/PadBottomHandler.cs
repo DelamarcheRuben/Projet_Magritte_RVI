@@ -8,10 +8,8 @@ using UnityEngine.XR;
 public class PadBottomHandler : MonoBehaviour
 {
     public GameObject selectedObject;
-
     private List<InputDevice> devicesWithPadButton;
     private bool lastButtonState = false;
-
     public Console console;
 
     void Start()
