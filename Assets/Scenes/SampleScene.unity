@@ -1474,7 +1474,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  audio: {fileID: 0}
 --- !u!1 &866833979 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8953639750482247894, guid: 4d60f28ccc38a5d4680fbe884cf03f1a, type: 3}
@@ -2244,7 +2243,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  audio: {fileID: 0}
 --- !u!114 &1345431672 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8953639751942040584, guid: 4d60f28ccc38a5d4680fbe884cf03f1a, type: 3}
@@ -2296,8 +2294,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461575376}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -36, y: 0, z: 0}
-  m_LocalScale: {x: 20, y: 1, z: 20}
+  m_LocalPosition: {x: -27, y: 0, z: 13.4}
+  m_LocalScale: {x: 4.9, y: 1, z: 5.3}
   m_Children: []
   m_Father: {fileID: 1667968297}
   m_RootOrder: 0
@@ -3508,7 +3506,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  audio: {fileID: 0}
 --- !u!114 &6733214827839914787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3538,7 +3535,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  audio: {fileID: 0}
 --- !u!1001 &7042142204204661926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3655,6 +3651,10 @@ PrefabInstance:
       propertyPath: console
       value: 
       objectReference: {fileID: 488696575}
+    - target: {fileID: 8628657836029705114, guid: ebe114e28ee85a747b1bc001f23ceda3, type: 3}
+      propertyPath: doorObject
+      value: 
+      objectReference: {fileID: 37871754}
     - target: {fileID: 8628657836029705115, guid: ebe114e28ee85a747b1bc001f23ceda3, type: 3}
       propertyPath: m_Name
       value: PositionManager

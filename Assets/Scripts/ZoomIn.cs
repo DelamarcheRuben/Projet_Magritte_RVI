@@ -7,7 +7,7 @@ public class ZoomIn : MonoBehaviour
     public GameObject camera_offset;
     public Console console;
 
-    private float value_zoom = 1;
+    private float value_zoom = 4.5f;
 
     private Vector3 last_translate;  
 

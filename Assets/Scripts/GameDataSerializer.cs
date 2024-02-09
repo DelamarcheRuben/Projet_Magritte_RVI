@@ -6,13 +6,16 @@ public class GameState
 {
     public Vector3 xrigPosition;
     public Vector3[] childPositions;
+    public bool doorObjectActive;
 }
+
 
 public class GameDataSerializer : MonoBehaviour
 {
     public string saveFileName = "gamestate.json";
     public Transform xrig;
     public Console console;
+    public GameObject doorObject;
 
     void Start()
     {
@@ -27,7 +30,6 @@ public class GameDataSerializer : MonoBehaviour
     void OnApplicationQuit()
     {
         SaveGameState();
-        File.Delete(saveFileName);
     }
 
     public void SaveGameState()
@@ -43,10 +45,15 @@ public class GameDataSerializer : MonoBehaviour
             gameState.childPositions[i] = child.position;
         }
 
+        // Sauvegarde l'état d'activation de doorObject
+        gameState.doorObjectActive = doorObject.activeSelf;
+
         string json = JsonUtility.ToJson(gameState);
         string filePath = Path.Combine(Application.persistentDataPath, saveFileName);
         File.WriteAllText(filePath, json);
+        console.AddLine("Sauvegarde de la position du joueur et de l'état de la porte.");
     }
+
 
     public void LoadGameState()
     {
@@ -65,11 +72,13 @@ public class GameDataSerializer : MonoBehaviour
             {
                 if (i < xrig.childCount)
                 {
-                    console.AddLine(gameState.childPositions[i].ToString());
                     Transform child = xrig.GetChild(i);
                     child.position = gameState.childPositions[i];
                 }
             }
+
+            // Restaure l'état d'activation de doorObject
+            doorObject.SetActive(gameState.doorObjectActive);
         }
         else
         {
