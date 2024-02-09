@@ -12,6 +12,7 @@ public class TextManager : MonoBehaviour
     public Renderer passwordRenderer; // Le Renderer du cube Password
     public TMP_Text passwordHisto;
     public GameObject doorObject;
+    public GameObject mur; // Solution approximative pour gérer le problème de porte qui a un collider bugué.
 
     private FixedSizeQueue<string> queueHistoric = new FixedSizeQueue<string>(9);
 
@@ -67,6 +68,7 @@ public class TextManager : MonoBehaviour
     private void DoorAnimation()
     {
         doorObject.SetActive(false);
+        mur.SetActive(false);
     }
 
     private void UpdatePasswordHistory()

@@ -87,7 +87,7 @@ public class PadMenu : MonoBehaviour
 							|| tempState;
 			}
 
-			if (tempState != lastButtonState && (Input.GetAxis("Horizontal") > 0.8 || Input.GetAxis("Horizontal") < -0.8))
+			if (tempState != lastButtonState && (Input.GetAxis("Horizontal") > 0.5 || Input.GetAxis("Horizontal") < -0.5))
 			{
 				SceneManager.LoadScene("Menu");
 				lastButtonState = tempState;
